@@ -1,0 +1,86 @@
+import { StyleSheet, Dimensions} from "react-native";
+
+const width = Dimensions.get('window').width 
+
+export const styles = StyleSheet.create({
+	container:{
+		flex:1,
+		backgroundColor:'#000830'
+	},
+	image:{
+		width: width+10,
+		height:width*0.6,
+		resizeMode:'cover',
+		position:"absolute"
+	},
+	container_text:{
+		width:'100%',
+		marginTop:'10%',
+		marginStart:20
+	},
+	text_title:{
+		color:'white',
+		fontSize:40,
+		marginTop:-8,
+		width:'80%',
+		fontFamily:"Quicksand-Bold"
+	},
+	text_subtitle:{
+		color:"white",
+		fontSize:15,
+		fontFamily:"Varela-Round"
+	},
+	emojis:{
+		width:35,
+		height:35
+	},
+	container_top_message:{
+		flexDirection:'row',
+		backgroundColor:'#22096C',
+		borderRadius:15,
+		marginHorizontal:20,
+		paddingHorizontal:20,
+		paddingVertical:10,
+		gap:10,
+		marginTop:'17%',
+		alignItems:'center'
+	},
+	text_topic:{
+		fontFamily:'Varela-Round',
+		color:"white",
+		fontSize:18,
+		marginStart:20,
+		marginTop:20,
+		marginBottom:10
+	},
+	text_top_message:{
+		fontFamily:'Varela-Round',
+		color:'white',
+		fontSize:15
+	},
+	container_emojis:{
+		justifyContent:'space-between',
+		paddingHorizontal:20,
+		flexDirection:'row',
+		gap:20,
+		paddingVertical:10,
+		marginHorizontal:20,
+		backgroundColor:'#22096C',
+		borderRadius:15
+	},
+	title_button:{
+		fontFamily:'Quicksand-Bold',
+		fontSize:23
+	},
+	subtitle_button:{
+		fontSize:13,
+		lineHeight:14,
+		fontFamily:"Varela-Round"
+	},
+	container_text_button:{
+		position:'absolute', 
+		width:'50%',
+		marginStart:'25%', 
+		top:10
+	}
+})

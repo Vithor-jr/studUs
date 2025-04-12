@@ -1,0 +1,55 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+	cardMethod:{
+		justifyContent:'center',
+		alignItems:'center',
+		width:'43%',
+		height:180,
+		paddingHorizontal:10,
+		marginBottom:20,
+		borderRadius:15
+	},
+	text_title_car_method:{
+		textAlign:'center',
+		color:'white',
+		fontFamily:'Quicksand-Bold'
+	},
+	ticket_tips:{
+		width:'100%',
+		flexDirection:'row',
+		borderRadius:15,
+		paddingHorizontal:15,
+		paddingVertical:20,
+		alignItems:'center',
+		justifyContent:'space-between'
+	},
+	container_texts_icon:{
+		flexDirection:'row',
+		alignItems:'center',
+		gap:5
+	},
+	text_title_ticket_tips:{
+		fontFamily:'Quicksand-Bold',
+		fontSize:13.5
+	},
+	text_ticket_subtitle:{
+		fontFamily:'Varela-Round',
+		color:'rgba(0, 0, 0, 0.4)',
+		fontSize:12
+	},
+	text_ticket_body:{
+		fontFamily:'Varela-Round'
+	},
+	container_bottom_texto_ticket:{
+		borderBottomStartRadius:15,
+		borderBottomEndRadius:15,
+		paddingHorizontal:15,
+	},
+	text_bottom_ticket_body:{
+		fontFamily:'Varela-Round',
+		textAlign:'center',
+		color:'rgba(0, 0, 0, 0.6)',
+		fontSize:12,
+	}
+})

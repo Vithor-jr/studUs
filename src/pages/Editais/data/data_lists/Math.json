@@ -1,0 +1,31 @@
+{
+	"recorrente": [
+		{
+			"id": 1,
+			"label": "Matemática básica"
+		},
+		{
+			"id": 2,
+			"label": "Estátistica"
+		},
+		{
+			"id": 3,
+			"label": "Geometria espacial"
+		},
+		{
+			"id": 4,
+			"label": "Geometria plana"
+		},	
+		{
+			"id": 5,
+			"label": "Análise de Gráficos"
+		},
+		{
+			"id": 6,
+			"label": "Probabilidade"
+		}
+	],
+	"all": [
+		
+	]
+}

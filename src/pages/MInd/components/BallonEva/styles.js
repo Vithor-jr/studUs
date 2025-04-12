@@ -1,0 +1,39 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+	container:{
+		flexDirection:'row',
+		gap:10,
+		paddingHorizontal:20,
+		paddingVertical:5,
+	},
+	image_eva:{
+		borderWidth:1,
+		borderColor:'white',
+		borderRadius:20,
+		width:40,
+		height:40
+	},
+	container_ballon:{
+		position:'absolute',
+		marginStart:55,
+		marginTop:5,
+		alignItems:'center',
+		justifyContent:'center'
+	},
+	text:{
+		position:'absolute',
+		marginStart:30,
+		fontSize:12,
+		textAlign:'center',
+		color:'#3B267B',
+		fontFamily:"Varela-Round"
+	},
+	container_eva:{
+		alignItems:'center'
+	},
+	text_eva:{
+		color:'white',
+		fontFamily:'Varela-Round'
+	}
+})

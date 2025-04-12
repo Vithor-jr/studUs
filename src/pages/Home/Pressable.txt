@@ -1,0 +1,67 @@
+Declaração dos estados
+const [isVisible, setIsVisible] = useState(false);
+const [position, setPosition] = useState({ x: 0, y: 0 });
+
+Elemento que desfaz o Pressable 
+<TouchableWithoutFeedback onPress={() => setIsVisible(false)}>
+
+elemento de Pressable
+<View style={{ width:'100%', height:'80%' , backgroundColor:'#F3F3F3', marginTop:'10%'}}>
+	<Pressable
+	onLongPress={(event) => {
+		const locationX = event.nativeEvent.locationX;
+		const locationY = event.nativeEvent.locationY;
+		setPosition({ x: locationX, y: locationY });
+		setIsVisible(true);
+		console.log('Elemento foi pressionado por um longo período');
+	}}
+	delayLongPress={300}
+	>
+	<View style={{width:'40%', alignItems:'center', borderRadius:50, backgroundColor:'#6048AC', paddingVertical:20,}}>
+		<Text style={{fontFamily:'Varela-Round', color:'white', fontSize:15}}>Pressione-me</Text>
+	</View>
+	</Pressable>
+
+	{isVisible && (
+	<TouchableWithoutFeedback onPress={() => {}}>
+		<View style={{ position: 'absolute', top: position.y, left: position.x, width:'50%', height:'50%', backgroundColor:'white', borderRadius:20, alignItems:'center', justifyContent:'center'}}>
+			<Text>View está visível</Text>
+		</View>
+	</TouchableWithoutFeedback>
+	)}
+</View>
+
+
+{activitiesToday.length !== 0 ? 
+                <View style={{minHeight:'25%'}}>
+                  <FlatList
+                    scrollEnabled={activitiesToday.length >= 3}
+                    showsHorizontalScrollIndicator={false}
+                    data={activitiesToday}
+                    horizontal
+                    renderItem={({ item, index}) => {
+                      return <Activity activity={item} index={index}/>;
+                    }}
+                    keyExtractor={item => item.id.toString()}
+                  />
+                </View>
+               : 
+                <Text style={styles.text_message_activitys}>Não há atividades agendadas para hoje</Text>
+            }
+
+            {activitiesWeek.length !== 0 ? 
+                <View style={{minHeight:'25%'}}>
+                  <FlatList
+                    scrollEnabled={activitiesWeek.length >= 3}
+                    showsHorizontalScrollIndicator={false}
+                    data={activitiesWeek}
+                    horizontal
+                    renderItem={({ item, index}) => {
+                      return <Activity activity={item} index={index}/>;
+                    }}
+                    keyExtractor={item => item.id.toString()}
+                  />
+                </View>
+               : 
+                <Text style={styles.text_message_activitys}>Ainda não há tarefas registradas</Text>
+            }

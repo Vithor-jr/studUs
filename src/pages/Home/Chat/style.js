@@ -1,0 +1,89 @@
+import { StyleSheet, Dimensions } from "react-native";
+
+const {width, heigth} = Dimensions.get('window')
+
+const styles = StyleSheet.create({
+	container_bar:{
+		backgroundColor:'#6048AC',
+		flex:1
+	},
+	bar:{
+		borderTopEndRadius:50,
+		borderTopStartRadius:50,
+		shadowColor:'white',
+	},
+	text_bar:{
+		fontFamily:'Varela-Round',
+		fontSize:12
+	},
+	container_top:{
+		height:'10%',
+	},
+	text_title:{
+		fontFamily:'Varela-Round',
+		color:'white',
+		fontSize:20,
+	},
+	conatiner_ticket_activitys:{
+		width:width,
+		backgroundColor:'white',
+		borderTopColor:'#ECECEC',
+		borderTopWidth:2,	
+		flexDirection:'row',
+		alignItems:'center',
+		justifyContent:'space-between',
+		paddingVertical:7,
+		paddingHorizontal:20
+	},
+	text_title_activity:{
+		width:width*0.3,
+		fontSize:12,
+		fontFamily:'Quicksand-Bold'
+	},
+	text_entrega:{
+		fontFamily:'Quicksand-Bold',
+		fontSize:10
+	},
+	container_activity_title:{
+		flexDirection:'row',
+		justifyContent:'space-between',
+		alignItems:'center',
+		gap:10
+	},
+	container_circle: {
+		borderRadius:50,
+		width:30,
+		height:30,
+		alignItems:'center',
+		justifyContent:'center'
+	},
+	text_category_activity:{
+		fontFamily:'Quicksand-Bold',
+		fontSize:8,
+		color:'#7E7E7E'
+	},
+	container_button_dropdown:{
+		backgroundColor:'white',
+	},
+	container_button_list:{
+		justifyContent:'space-between',
+		width:'100%',
+		paddingHorizontal:'5%',
+		paddingVertical:'3%',
+		flexDirection:'row'
+	},
+	text_abrir_lista:{
+		fontFamily:'Varela-Round',
+		color:'#464646',
+		fontSize:15
+	},
+	text_mostrar:{
+		color:'#17A1FA',
+		fontFamily:'Varela-Round',
+		marginTop:10,
+		fontSize:12,
+		marginBottom:'10%'
+	}
+});
+
+export default styles;

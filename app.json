@@ -3,25 +3,48 @@
     "name": "Studus",
     "slug": "Studus",
     "version": "1.0.0",
+    "newArchEnabled": true,
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon_studus.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#24125A"
     },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./src/fonts/VarelaRound-Regular.ttf",
+            "./src/fonts/Quicksand-Bold.ttf"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#24125A"
+      },
+      "package": "com.vithor.Studus"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "af020891-2712-470d-a20f-4fc3b40f8dd0"
+      }
     }
   }
 }
