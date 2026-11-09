@@ -23,15 +23,15 @@ Este repositório contém o **front end** (aplicativo mobile). A API, construíd
 
 ## Funcionalidades
 
-- ✅ Login e autenticação
-- ✅ Tela inicial com visão geral dos estudos
-- ✅ Métodos e dicas de estudo
-- ✅ Atividades e organização por calendário
-- ✅ Temporizador de estudo
-- ✅ Gráficos de acompanhamento
-- ✅ Meditações
-- ✅ Acompanhamento do estado emocional
-- ✅ Chat
+- Login e autenticação
+- Tela inicial com visão geral dos estudos
+- Métodos e dicas de estudo
+- Atividades e organização por calendário
+- Temporizador de estudo
+- Gráficos de acompanhamento
+- Meditações
+- Acompanhamento do estado emocional
+- Chat
 
 ## Telas
 
@@ -68,9 +68,6 @@ cd studUs
 
 # 2. Instale as dependências
 npm install
-
-# 3. Configure o endereço da API
-#    [indique aqui onde fica a URL da API no código, ex.: src/services/api.js]
 
 # 4. Inicie o projeto
 npx expo start
