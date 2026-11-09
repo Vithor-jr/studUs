@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/screenshots/instagrampost.png" alt="Login" />
+<img src="docs/screenshots/main.png" alt="Tela principal" heigth="120px"/>
 
 # studUs
 
@@ -9,9 +9,6 @@
 ![React Native](https://img.shields.io/badge/React_Native-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-1C1E24?style=for-the-badge&logo=expo&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-
-<img src="docs/screenshots/main.png" alt="Login" />
 
 
 </div>
@@ -38,9 +35,8 @@ Este repositório contém o **front end** (aplicativo mobile). A API, construíd
 
 ## Telas
 
-
 <div align="center">
-  <img src="docs/screenshots/telas.png" width="180" alt="Login" />
+  <img src="docs/screenshots/telas.png" alt="Login" />
 </div>
 
 ## Tecnologias
@@ -95,7 +91,7 @@ studUs/
 └── eas.json     # configuração de build (EAS)
 ```
 
-## Equipe
+## Equipe Studus
 
 | Nome | Papel |
 | --- | --- |
@@ -104,6 +100,8 @@ studUs/
 | **Silvana Benchimol** | Analista de Sistemas |
 
 O estudo de caso de UX/UI está no portfólio de Cecília: [studUs](https://cecilia-three.vercel.app/ux-ui-design/studus).
+
+<img src="docs/screenshots/logotipo.png" alt="Logotipo"/>
 
 ## Autor
 
